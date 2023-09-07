@@ -27,7 +27,7 @@ func chk(err error) {
 func NewTronClient(providerURL string) *TronClient {
 	return &TronClient{
 		httpURI: providerURL + ":8090",
-		jsonURI: providerURL + ":50545/jsonrpc",
+		jsonURI: providerURL + ":8545/jsonrpc",
 	}
 }
 
